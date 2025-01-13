@@ -1,27 +1,53 @@
 // import ModelViewer from "./ModelViewer";
 
+import gsap from 'gsap';
+import { useEffect } from 'react';
 import ScrollDown from './ScrollDown';
 import Testimonies from './Testimonies';
 import VideoPlayer from './VideoPlayer';
 
 const Background = () => {
+  useEffect(() => {
+    gsap.from('#car', { x: '10%', duration: 2 });
+    gsap.to('#car', { x: '0', duration: 2.5, ease: 'power3.out' });
+    gsap.from('#title1', { x: '-40%', duration: 2 });
+    gsap.to('#title1', { x: '0', duration: 2, ease: 'power3.out' });
+    gsap.from('#title2', { x: '20%', duration: 2 });
+    gsap.to('#title2', { x: '0', duration: 2, ease: 'power3.out' });
+    gsap.to('#title3', { x: '10%', duration: 2 });
+    gsap.from('#title4', { x: '30%', duration: 2 });
+    gsap.to('#title4', { x: '0', duration: 2, ease: 'power3.out' });
+  }, []);
+
   return (
-    <div className="relative mt-[rem] h-full w-full max-w-[100%]">
+    <div className="relative mt-[rem] h-full w-full max-w-[100%] overflow-hidden">
       <div className="z-1 absolute -mt-[13%] flex h-full w-full items-center justify-center gap-2 bg-transparent pl-[5%] font-porscha text-primary">
-        <h2 className="mt-1 flex font-porscha3ditalic text-[1rem] xs:text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[4rem] xl:mt-4">
+        <h2
+          id="title1"
+          className="mt-1 flex font-porscha3ditalic text-[1rem] xs:text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[4rem] xl:mt-4"
+        >
           The
         </h2>
-        <h1 className="font-porschabolditalic text-[2rem] xs:text-[2.5rem] sm:text-[3rem] md:text-[4.5rem] lg:text-[6rem] xl:text-[7rem]">
+        <h1
+          id="title2"
+          className="font-porschabolditalic text-[2rem] xs:text-[2.5rem] sm:text-[3rem] md:text-[4.5rem] lg:text-[6rem] xl:text-[7rem]"
+        >
           Ultimate
         </h1>
       </div>
       <div className="absolute z-10 -mt-[8%] flex h-full w-full items-center justify-center gap-2 bg-transparent font-porscha text-primary">
-        <h1 className="-ml-[10%] font-porschabolditalic text-[2rem] xs:text-[2.5rem] sm:text-[3rem] md:text-[4.5rem] lg:text-[6rem] xl:text-[7rem]">
+        <h1
+          id="title3"
+          className="-ml-[10%] font-porschabolditalic text-[2rem] xs:text-[2.5rem] sm:text-[3rem] md:text-[4.5rem] lg:text-[6rem] xl:text-[7rem]"
+        >
           refreshing
         </h1>
       </div>
       <div className="absolute z-10 -mt-[3%] flex h-full w-full items-center justify-center gap-2 bg-transparent pl-[30%] font-porscha text-primary">
-        <h2 className="-mr-[45%] mt-1 flex font-porscha3ditalic text-[1rem] xs:text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[4rem] xl:mt-4">
+        <h2
+          id="title4"
+          className="-mr-[45%] mt-1 flex font-porscha3ditalic text-[1rem] xs:text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[4rem] xl:mt-4"
+        >
           ride
         </h2>
       </div>
@@ -34,8 +60,8 @@ const Background = () => {
       {/* <div className="-mt-[54%] pl-[8.5%]">
         <ModelViewer />
       </div> */}
-      <div className="absolute -mt-[56.5%] pl-[]">
-        <img src="/images/car.png" />
+      <div className="absolute -ml-[0.5%] -mt-[56.5%] overflow-hidden">
+        <img id="car" src="/images/car.png" />
       </div>
 
       <div className="absolute top-0 z-10 w-full px-[2%] pt-[3%]">
