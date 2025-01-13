@@ -1,4 +1,4 @@
-// import ModelViewer from "./ModelViewer";
+import ModelViewer from './ModelViewer';
 
 import gsap from 'gsap';
 import { useEffect } from 'react';
@@ -25,7 +25,7 @@ const Background = () => {
     gsap.to('#scrolldown', {
       y: '0',
       duration: 2,
-      ease: 'bounce.out'
+      ease: 'power3.out'
     });
     gsap.from('#rectanglemain', {
       paddingLeft: '0%',
@@ -72,17 +72,17 @@ const Background = () => {
           ride
         </h2>
       </div>
-
+      <div className="">
+        <ModelViewer />
+      </div>
       <img
         src="images/bg.png"
         alt="Background"
         className="object-cover w-full h-full"
       />
-      {/* <div className="-mt-[54%] pl-[8.5%]">
-        <ModelViewer />
-      </div> */}
+
       <div className="absolute -ml-[0.5%] -mt-[56.5%] overflow-hidden">
-        <img id="car" src="/images/car.png" />
+        {/* <img id="car" src="/images/car.png" /> */}
       </div>
 
       <div className="absolute top-0 z-10 w-full pt-[3%]">
@@ -92,7 +92,7 @@ const Background = () => {
           src="/images/rectangle.svg"
         ></img>
         <section className="-mt-[3rem] flex w-full justify-between">
-          <div className="scale-0 sm:-ml-[9rem] sm:scale-[0.3] md:-ml-[5rem] md:scale-[0.6] lg:-ml-[2rem] lg:-mt-3 lg:scale-[0.8] xl:-mt-6 xl:ml-3 xl:scale-[1]">
+          <div className="ml-4 scale-0 sm:-ml-[9rem] sm:scale-[0.3] md:-ml-[5rem] md:scale-[0.6] lg:-ml-[2rem] lg:-mt-3 lg:scale-[0.8] xl:-mt-6 xl:ml-3 xl:scale-[1]">
             <Testimonies />
           </div>
           <div className="absolute right-12 mt-2 w-[4rem] scale-[0] xs:scale-[1] sm:right-12 sm:-mt-4 sm:w-[7rem] md:right-16 md:-mt-8 md:w-[10rem] lg:right-20 lg:-mt-12 lg:w-[12rem] xl:right-28 xl:-mt-16 xl:w-[14rem]">
