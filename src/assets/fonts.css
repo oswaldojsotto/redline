@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Porscha";
+  src: url("/src/assets/fonts/porscha.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PorschaBoldItalic";
+  src: url("/src/assets/fonts/porschaboldital.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Porscha3ditalic";
+  src: url("/src/assets/fonts/porscha3dital.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tektur";
+  src: url("/src/assets/fonts/tektur_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PorschaItalic";
+  src: url("/src/assets/fonts/porschaital.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Porschav3";
+  src: url("/src/assets/fonts/porschav3.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PorschaLaserItalic";
+  src: url("/src/assets/fonts/porschav3laserital.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.glowing-text {
+  text-shadow:
+    0 0 5px #ff1a1ac4,
+    0 0 10px #ff1a1ac4,
+    0 0 15px #ff1a1ac4,
+    0 0 20px #ff1a1ac4,
+    0 0 30px #ff1a1ac4;
+}
+
+.glowing-svg {
+  filter: drop-shadow(0 0 5px #ff1a1a91) drop-shadow(0 0 5px #ff1a1a98);
+}
