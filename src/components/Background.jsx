@@ -1,4 +1,4 @@
-import ModelViewer from './ModelViewer';
+// import ModelViewer from './ModelViewer';
 
 import gsap from 'gsap';
 import { useEffect } from 'react';
@@ -72,9 +72,9 @@ const Background = () => {
           ride
         </h2>
       </div>
-      <div className="">
+      {/* <div className="">
         <ModelViewer />
-      </div>
+      </div> */}
       <img
         src="images/bg.png"
         alt="Background"
@@ -82,7 +82,7 @@ const Background = () => {
       />
 
       <div className="absolute -ml-[0.5%] -mt-[56.5%] overflow-hidden">
-        {/* <img id="car" src="/images/car.png" /> */}
+        <img id="car" src="/images/car.png" />
       </div>
 
       <div className="absolute top-0 z-10 w-full pt-[3%]">
