@@ -78,7 +78,7 @@ const Background = () => {
       <img
         src="images/bg.png"
         alt="Background"
-        className="object-cover w-full h-full"
+        className="h-full w-full object-cover"
       />
 
       <div className="absolute -ml-[0.5%] -mt-[56.5%] overflow-hidden">
@@ -101,7 +101,7 @@ const Background = () => {
 
           <div
             id="scrolldown"
-            className="absolute w-[12rem] rotate-90 scale-0 overflow-hidden sm:-right-[70px] sm:-mt-[6rem] sm:scale-[0.4] md:-right-14 md:-mt-[8rem] md:scale-[0.6] lg:-right-[3.5rem] lg:scale-[0.7] xl:-right-[3rem] xl:-mt-[12rem] xl:scale-[0.9]"
+            className="absolute w-[12rem] rotate-90 scale-0 overflow-hidden sm:-right-[70px] sm:-mt-[6rem] md:-right-14 md:-mt-[8rem] md:scale-[0.6] lg:-right-[3.5rem] lg:scale-[0.7] xl:-right-[3rem] xl:-mt-[12rem] xl:scale-[0.9]"
           >
             <ScrollDown />
           </div>
